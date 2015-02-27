@@ -13,8 +13,27 @@
           </block>
         </value>
         <next>
-          <block type="oled_drawtext" id="5">
-            <field name="TEXT">f u world. im going to destroy u</field>
+          <block type="oled_drawtext" id="9">
+            <field name="TEXT">f u world</field>
+            <next>
+              <block type="oled_setcursor" id="6" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="7">
+                    <field name="NUM">10</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="8">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="5">
+                    <field name="TEXT">im going to destroy u</field>
+                  </block>
+                </next>
+              </block>
+            </next>
           </block>
         </next>
       </block>
